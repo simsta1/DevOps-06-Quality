@@ -1,3 +1,3 @@
-# DevOps 03 DevOpsDemo
+# DevOps 06 - Quality
 
 ## Lernjournal
