@@ -48,5 +48,11 @@ public class ToDoControllerTest {
         controller.deleteTodo(1);
         assertEquals(0, controller.count());
     }
-
+    @Test
+    public void testTestEndpoint() {
+        var controller = new ToDoController();
+        var result = controller.test();
+        assertEquals("ToDo app is up and running!", result);
+    }
 }
+
