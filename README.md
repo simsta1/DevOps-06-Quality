@@ -15,4 +15,6 @@
 ![sonar setup](assets/sonarqube_report_setup.png)
 
 ![sonar prompt](assets/sonarqube_prompt.png)
+
+
 ![sonar backend frontend](assets/sonarqube_backend_frontend.png)
