@@ -124,7 +124,14 @@ pip install -r requirements.txt
 ```bash
 pytest test_browser.py
 ```
-
 Output: 
-![sonar setup](assets/selenium_tests.png)
+![selenium test](assets/selenium_tests.png)
+
+### Selenium Grid
+
+Für diesen Case habe ich DevOpsDemo bei mir lokal geclonet. Danach musste ich das Docker Image neu builden, da es im `Docker-Compose.yaml` integriert ist. Als ich fertig war startete ich die Container mit `docker-compose up -d`.
+
+Als alle Container liefen startete ich lokal das Backend via Gradle BootRun und das Frontend via npm serve. Danach führte ich die Tests mit Hilfe der NPM-Scripts Befehlen `test-local-chrome` und `test-local-firefox` aus. Nach einigen Sekunden wurden dann die Videodateien, wie im Foto ersichtlich erzeugt. 
+
+![selenium test](assets/selenium_grid_proof.png)
 
