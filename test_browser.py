@@ -1,4 +1,5 @@
 import pytest
+
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
@@ -18,13 +19,13 @@ def driver():
     """
 
     options = webdriver.EdgeOptions()
-    options.add_argument('--headless')
+    #options.add_argument('--headless')
     options.add_argument('--disable-gpu')
     driver = webdriver.Edge(options=options)
 
     yield driver
 
-def test_python_org_search(driver):
+def test_python_org_search(driver, record_screen):
     """
     Tests the search functionality on the Python.org website.
 
@@ -64,7 +65,6 @@ def test_wikipedia_search(driver):
     Raises:
         AssertionError: If the heading or title does not match the expected value.
     """
-
     driver.get("https://www.wikipedia.org/")
 
     search_input = driver.find_element(By.ID, "searchInput")
