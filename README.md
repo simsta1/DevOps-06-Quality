@@ -103,8 +103,28 @@ Ich habe mir einige Issues angeschaut in Sonarqube und danach Issues im File `Pa
 
 ### Selenium
 
-Leider hats in meinem Anwendungsfall für Google Chrome keine validen Plugins gegeben und die Tests im Edge-Browser haben leider nicht funktioniert. Da ich auch schon Webspracping mit Selenium auf Python betrieben habe, habe ich Python Code für den Test implementiert.
+Leider hats in meinem Anwendungsfall für Google Chrome keine validen Plugins gegeben und die Tests im Edge-Browser haben leider nicht funktioniert. Da ich auch schon Webspracping mit Selenium auf Python betrieben habe, habe ich Python Code für die Anwendung von Selenium implementiert. Den Code habe ich im File `test_browser.py` ergänzt.
 
+Anleitung:
+1. Neue Virtual Environment anlegen für Python Dependencies:
+```bash
+python -m venv env
+```
 
+2. Environment aktivieren.
 
+3. requirements installiern
+```bash
+pip install -r requirements.txt
+```
+
+4. Sicherstellen, dass Edge installiert und driver zur Verfügung steht.
+
+5. Tests laufen lassen:
+```bash
+pytest test_browser.py
+```
+
+Output: 
+![sonar setup](assets/selenium_tests.png)
 
